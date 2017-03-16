@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-N49IB15" id="0" name="Add Criterion" package="" tests="3" time="10.493" timestamp="2016-10-01T18:50:15">
+  <testsuite errors="0" failures="0" hostname="VivianeNego-PC" id="0" name="Add Criterion" package="" tests="3" time="37.235" timestamp="2017-03-16T16:31:30">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a criterion that does not exist" time="0.669" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a criterion that does not exist" time="2.468" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a criterion that already exists" time="0.052" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a criterion that already exists" time="0.173" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error when registering a criterion that already exists" time="5.736" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error when registering a criterion that already exists" time="16.765" />
 
       <system-out><![CDATA[#Esta feature Ã© a feature inicial, idealizada antes da iteraÃ§Ã£o de imlementar features.
 #Portanto, serÃ¡ descartada dos testes finais visto que nÃ£o faz uso de mÃ©todos de controlador que nÃ£o sejam
@@ -47,16 +47,16 @@ Feature: Add Criterion
 --Output from Error when registering a criterion that already exists--]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-N49IB15" id="1" name="Add Group Criterion" package="" tests="4" time="5.657" timestamp="2016-10-01T18:50:26">
+  <testsuite errors="0" failures="0" hostname="VivianeNego-PC" id="1" name="Add Group Criterion" package="" tests="4" time="15.145" timestamp="2017-03-16T16:32:09">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that does not exist" time="0.051" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that does not exist" time="0.156" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a non-existent group of criteria" time="3.0" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a non-existent group of criteria" time="8.839" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that some of them already exists" time="0.054" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that some of them already exists" time="0.171" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that some elements of it already exists" time="2.523" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of criteria that some elements of it already exists" time="5.87" />
 
       <system-out><![CDATA[#Thiago Bastos
 Feature: Add Group Criterion
@@ -112,14 +112,47 @@ Feature: Add Group Criterion
 --Output from Register a group of criteria that some elements of it already exists--]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-N49IB15" id="2" name="AddEvaluation" package="" tests="3" time="0.507" timestamp="2016-10-01T18:50:26">
+  <testsuite errors="0" failures="0" hostname="VivianeNego-PC" id="2" name="Add Student" package="" tests="2" time="4.805" timestamp="2017-03-16T16:32:24">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluation to a criteria" time="0.273" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="I add a student with name &quot; &quot;" time="3.276" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluations using incomplete data" time="0.071" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error when I add a student with name &quot; &quot;" time="1.466" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluation more than once with same origin" time="0.131" />
+      <system-out><![CDATA[Feature: Add Student
+  As a professor
+  I want to register students in the system
+  So I can evaluate the students with respect to various criteria
+
+--Output from I add a student with name " "--
+--Output from Error when I add a student with name " "--
+  #Controller Scenario
+  Scenario: I add a student with name " "                                 # AddStudents.feature:7
+    Given the student " " with login "Fa" is not registered in the system # AddStudentsSteps.groovy:19
+    When I add the " " with login "Fa"                                    # AddStudentsSteps.groovy:23
+    Then the system does not register " " with login "Fa"                 # AddStudentsSteps.groovy:52
+
+  #GUI Scenario
+  Scenario: Error when I add a student with name " "                        # AddStudents.feature:14
+    Given the student " " with login "Fa" is not registered in the system   # AddStudentsSteps.groovy:19
+    And I am in the "add student" page                                      # AddStudentsSteps.groovy:74
+    When I add the " " with login "Fa"                                      # AddStudentsSteps.groovy:23
+    Then I should see a message related to the student registration failure # AddStudentsSteps.groovy:99
+]]></system-out>
+
+      <system-err><![CDATA[
+--Output from I add a student with name " "--
+--Output from Error when I add a student with name " "--]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="VivianeNego-PC" id="3" name="AddEvaluation" package="" tests="3" time="1.544" timestamp="2017-03-16T16:32:07">
+      <properties />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluation to a criteria" time="0.811" />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluations using incomplete data" time="0.25" />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Add evaluation more than once with same origin" time="0.374" />
 
       <system-out><![CDATA[Feature: AddEvaluation
   As a teacher
@@ -151,12 +184,12 @@ Feature: Add Group Criterion
 --Output from Add evaluation more than once with same origin--]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="DESKTOP-N49IB15" id="3" name="Notification" package="" tests="2" time="4.37" timestamp="2016-10-01T18:50:32">
+  <testsuite errors="0" failures="1" hostname="VivianeNego-PC" id="4" name="Notification" package="" tests="2" time="12.305" timestamp="2017-03-16T16:32:29">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Update a report" time="0.14" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Update a report" time="0.25" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Show the students list in the &quot;70% of evaluations are over the class average&quot; report" time="4.203">
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Show the students list in the &quot;70% of evaluations are over the class average&quot; report" time="11.93">
           <failure message="title ==~/Report List/&#xa;|     |&#xa;|     false&#xa;Show Report" type="grails.plugin.cucumber.FakeAssertionFailedError">Assertion failed: 
 
 title ==~/Report List/
@@ -237,12 +270,12 @@ Show Report
 --Output from Show the students list in the "70% of evaluations are over the class average" report--]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="DESKTOP-N49IB15" id="4" name="Remove Criterion" package="" tests="2" time="7.077" timestamp="2016-10-01T18:50:36">
+  <testsuite errors="0" failures="0" hostname="VivianeNego-PC" id="5" name="Remove Criterion" package="" tests="2" time="22.797" timestamp="2017-03-16T16:32:41">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove a criterion with students and evaluations using it" time="6.99" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove a criterion with students and evaluations using it" time="22.48" />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove a criterion from the system" time="0.062" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove a criterion from the system" time="0.253" />
 
       <system-out><![CDATA[#Arthur Lapprand
 Feature: Remove Criterion
@@ -272,30 +305,30 @@ Feature: Remove Criterion
 --Output from Remove a criterion from the system--]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="DESKTOP-N49IB15" id="5" name="Remove Evaluation" package="" tests="2" time="4.435" timestamp="2016-10-01T18:50:43">
+  <testsuite errors="0" failures="1" hostname="VivianeNego-PC" id="6" name="Remove Evaluation" package="" tests="2" time="21.723" timestamp="2017-03-16T16:33:04">
       <properties />
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove evaluations in different criterion from a student" time="4.323">
-          <failure message="title ==~ /Show EvaluationsByCriterion/&#xa;|     |&#xa;|     false&#xa;Show Student" type="grails.plugin.cucumber.FakeAssertionFailedError">Assertion failed: 
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove evaluations in different criterion from a student" time="21.408">
+          <failure message="title ==~ /Show Evaluation/&#xa;|     |&#xa;|     false&#xa;Show EvaluationsByCriterion" type="grails.plugin.cucumber.FakeAssertionFailedError">Assertion failed: 
 
-title ==~ /Show EvaluationsByCriterion/
+title ==~ /Show Evaluation/
 |     |
 |     false
-Show Student
+Show EvaluationsByCriterion
 
-	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy:12)
+	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy:12)
 	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
 	at geb.Page.verifyAt(Page.groovy:182)
 	at geb.Browser.doAt(Browser.groovy:454)
 	at geb.Browser.at(Browser.groovy:336)
 	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
-	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:75)
+	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:77)
 	at ✽.When I remove the evaluation &quot;MA&quot;(RemoveEvaluation.feature:13)
 </failure>
 
       </testcase>
 
-      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove an Evaluation from a Student" time="0.082" />
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove an Evaluation from a Student" time="0.205" />
 
       <system-out><![CDATA[#Arthur Lapprand
 Feature: Remove Evaluation
@@ -313,13 +346,13 @@ Feature: Remove Evaluation
     When I remove the evaluation "MA"                                           # RemoveEvaluationSteps.groovy:67
       Assertion failed: 
       
-      title ==~ /Show EvaluationsByCriterion/
+      title ==~ /Show Evaluation/
       |     |
       |     false
-      Show Student
+      Show EvaluationsByCriterion
       
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy:12)
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy:12)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy)
       	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
       	at geb.Page.verifyAt(Page.groovy:182)
       	at geb.Page$verifyAt$4.call(Unknown Source)
@@ -327,7 +360,7 @@ Feature: Remove Evaluation
       	at geb.Browser.doAt(Browser.groovy:454)
       	at geb.Browser.at(Browser.groovy:336)
       	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
-      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:75)
+      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:77)
       	at âœ½.When I remove the evaluation "MA"(RemoveEvaluation.feature:13)
 
     Then I should not see it listed in the student                              # RemoveEvaluationSteps.groovy:81

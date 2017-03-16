@@ -14,13 +14,13 @@ Feature: Remove Evaluation
     When I remove the evaluation "MA"                                           # RemoveEvaluationSteps.groovy:67
       Assertion failed: 
       
-      title ==~ /Show EvaluationsByCriterion/
+      title ==~ /Show Evaluation/
       |     |
       |     false
-      Show Student
+      Show EvaluationsByCriterion
       
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy:12)
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy:12)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy)
       	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
       	at geb.Page.verifyAt(Page.groovy:182)
       	at geb.Page$verifyAt$4.call(Unknown Source)
@@ -28,7 +28,7 @@ Feature: Remove Evaluation
       	at geb.Browser.doAt(Browser.groovy:454)
       	at geb.Browser.at(Browser.groovy:336)
       	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
-      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:75)
+      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:77)
       	at ✽.When I remove the evaluation "MA"(RemoveEvaluation.feature:13)
 
     Then I should not see it listed in the student                              # RemoveEvaluationSteps.groovy:81

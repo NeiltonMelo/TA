@@ -20,6 +20,14 @@ Given(~'^the student "([^"]*)" with login "([^"]*)" is not registered in the sys
     assert Student.findByLogin(login) == null
 }
 
+When(~'^I add the "([^"]*)" with login "([^"]*)"$') { String name, String login ->
+	to AddStudentsPage
+	at AddStudentsPage
+	countStudent = AddStudentsTestDataAndOperations.countStudent()
+	page.fillStudentDetails(name, login)
+	page.selectAddStudent()
+}
+
 When(~'^I register "([^"]*)" with login "([^"]*)"$') { String name, String login ->
     AddStudentsTestDataAndOperations.createStudent(name, login)
 }
@@ -29,13 +37,6 @@ Then(~'^the student "([^"]*)" with login "([^"]*)" is saved in the system$') { S
     assert AddStudentsTestDataAndOperations.compatibleTo(student, name, login)
 }
 
-
-When(~'^I add the "([^"]*)" with login "([^"]*)"$') { String name, String login ->
-    //at AddStudentsPage
-    countStudent = AddStudentsTestDataAndOperations.countStudent()
-    page.fillStudentDetails(name, login)
-    page.selectAddStudent()
-}
 
 Then(~'^I can see the name of "([^"]*)" and the login "([^"]*)" in the list of students$') { String name, String login ->
     to StudentPage
@@ -49,7 +50,8 @@ Given(~'^the student "([^"]*)" with login "([^"]*)" is registered in the system$
 }
 
 Then(~'^the system does not register "([^"]*)" with login "([^"]*)"$') { String name, String login ->
-    assert AddStudentsTestDataAndOperations.alunoQtd(login) == 1
+    assert AddStudentsTestDataAndOperations.alunoQtd(login) == 0
+	
 }
 
 Then(~'^I can see the name of "([^"]*)" and the login "([^"]*)" in the list of students only once$') { String name, String login ->
@@ -92,4 +94,9 @@ And(~'^the name of "([^"]*)" and the login "([^"]*)" is already in the list of s
     page.selectAddStudent()
     to StudentPage
     assert page.confirmStudent(name, login)
+}
+
+Then(~'^I should see a message related to the student registration failure$'){->
+	at AddStudentsPage
+	assert page.checkForErrors()
 }

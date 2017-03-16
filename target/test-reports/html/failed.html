@@ -15,7 +15,7 @@
      - Failed tests</h1>
 <p class="intro">
                         Executed
-                        16
+                        18
                         tests
                     
                         with
@@ -61,7 +61,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">Update a report</b>
 </p>
-<p class="summary">Executed in 0.14 seconds.</p>
+<p class="summary">Executed in 0.25 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -71,7 +71,7 @@
 <p>
 <span class="icon failure"></span><b class="testname message failure">Show the students list in the "70% of evaluations are over the class average" report</b>
 </p>
-<p class="summary">Executed in 4.203 seconds.</p>
+<p class="summary">Executed in 11.93 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
@@ -187,30 +187,30 @@ Show Report
 <p>
 <span class="icon failure"></span><b class="testname message failure">Remove evaluations in different criterion from a student</b>
 </p>
-<p class="summary">Executed in 4.323 seconds.</p>
+<p class="summary">Executed in 21.408 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo">
 <div class="details">
 <p>
-<b class="message">title ==~ /Show EvaluationsByCriterion/
+<b class="message">title ==~ /Show Evaluation/
 |     |
 |     false
-Show Student</b>
+Show EvaluationsByCriterion</b>
 </p>
 <pre>Assertion failed: 
 
-title ==~ /Show EvaluationsByCriterion/
+title ==~ /Show Evaluation/
 |     |
 |     false
-Show Student
+Show EvaluationsByCriterion
 
-	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy:12)
+	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy:12)
 	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
 	at geb.Page.verifyAt(Page.groovy:182)
 	at geb.Browser.doAt(Browser.groovy:454)
 	at geb.Browser.at(Browser.groovy:336)
 	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
-	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:75)
+	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:77)
 	at ✽.When I remove the evaluation "MA"(RemoveEvaluation.feature:13)
 </pre>
 </div>
@@ -222,7 +222,7 @@ Show Student
 <p>
 <span class="icon success"></span><b class="testname message success">Remove an Evaluation from a Student</b>
 </p>
-<p class="summary">Executed in 0.082 seconds.</p>
+<p class="summary">Executed in 0.205 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -246,13 +246,13 @@ Feature: Remove Evaluation
     When I remove the evaluation "MA"                                           # RemoveEvaluationSteps.groovy:67
       Assertion failed: 
       
-      title ==~ /Show EvaluationsByCriterion/
+      title ==~ /Show Evaluation/
       |     |
       |     false
-      Show Student
+      Show EvaluationsByCriterion
       
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy:12)
-      	at pages.ShowEvaluationByCriterionPage$__clinit__closure1.doCall(ShowEvaluationByCriterionPage.groovy)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy:12)
+      	at pages.ShowEvaluationPage$__clinit__closure2.doCall(ShowEvaluationPage.groovy)
       	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
       	at geb.Page.verifyAt(Page.groovy:182)
       	at geb.Page$verifyAt$4.call(Unknown Source)
@@ -260,7 +260,7 @@ Feature: Remove Evaluation
       	at geb.Browser.doAt(Browser.groovy:454)
       	at geb.Browser.at(Browser.groovy:336)
       	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
-      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:75)
+      	at steps.RemoveEvaluationSteps$_run_closure4.doCall(RemoveEvaluationSteps.groovy:77)
       	at &acirc;œ&frac12;.When I remove the evaluation "MA"(RemoveEvaluation.feature:13)
 
     Then I should not see it listed in the student                              # RemoveEvaluationSteps.groovy:81
