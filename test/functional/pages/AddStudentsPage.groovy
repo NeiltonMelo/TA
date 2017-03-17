@@ -21,4 +21,8 @@ class AddStudentsPage extends Page{
     def selectAddStudent() {
         $("input", name: "create").click()
     }
+	
+	def boolean checkForErrors() {
+		return $("ul", class: "errors").isDisplayed()
+	}
 }

@@ -10,6 +10,7 @@ class Student {
 
     static constraints = {
         name blank : false
+		name (matches:'[A-Za-zÀ-ú\\s]+$') 
         login unique : true, blank:false;
 		password nullable: false, blank: false
     }

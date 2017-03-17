@@ -22,20 +22,21 @@ Given(~'^the student "([^"]*)" with login "([^"]*)" and password "([^"]*)" is no
 
 When(~'^I register "([^"]*)" with login "([^"]*)" and password "([^"]*)"$' ) { String name, String login, String password ->
     AddStudentsTestDataAndOperations.createStudent(name, login, password)
+
+When(~'^I add the "([^"]*)" with login "([^"]*)"$') { String name, String login ->
+	to AddStudentsPage
+	at AddStudentsPage
+	countStudent = AddStudentsTestDataAndOperations.countStudent()
+	page.fillStudentDetails(name, login)
+	page.selectAddStudent()
 }
+
 
 Then(~'^the student "([^"]*)" with login "([^"]*)" is saved in the system$') { String name, String login ->
     Student student = Student.findByLogin(login)
     assert AddStudentsTestDataAndOperations.compatibleTo(student, name, login)
 }
 
-
-When(~'^I add the "([^"]*)" with login "([^"]*)"$') { String name, String login ->
-    //at AddStudentsPage
-    countStudent = AddStudentsTestDataAndOperations.countStudent()
-    page.fillStudentDetails(name, login)
-    page.selectAddStudent()
-}
 
 Then(~'^I can see the name of "([^"]*)" and the login "([^"]*)" in the list of students$') { String name, String login ->
     to StudentPage
@@ -54,8 +55,14 @@ Given(~'^the student "([^"]*)" with login "([^"]*)" and password "([^"]*)" is re
     assert Student.findByLogin(login) != null
 }
 
+<<<<<<< HEAD
 Then(~'^the system does not register "([^"]*)" with login "([^"]*)" and password "([^"]*)"$') { String name, String login, String password ->
     assert AddStudentsTestDataAndOperations.alunoQtd(login) == 1
+=======
+Then(~'^the system does not register "([^"]*)" with login "([^"]*)"$') { String name, String login ->
+    assert AddStudentsTestDataAndOperations.alunoQtd(login) == 0
+	
+>>>>>>> danillo/master
 }
 
 Then(~'^I can see the name of "([^"]*)" and the login "([^"]*)" in the list of students only once$') { String name, String login ->
@@ -99,3 +106,9 @@ And(~'^the name of "([^"]*)" and the login "([^"]*)" is already in the list of s
     to StudentPage
     assert page.confirmStudent(name, login)
 }
+
+Then(~'^I should see a message related to the student registration failure$'){->
+	at AddStudentsPage
+	assert page.checkForErrors()
+}
+
