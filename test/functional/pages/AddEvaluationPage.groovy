@@ -43,7 +43,7 @@ class AddEvaluationPage extends Page {
     def chooseOrigin(String origin){
         $("select", name:"origin").click()
         $("select", name: "origin").find("option").find{it.value().equals(origin)}.click()
-    }
+	}
 
 
 }

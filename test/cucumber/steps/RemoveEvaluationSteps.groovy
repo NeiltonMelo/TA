@@ -108,7 +108,9 @@ def date
 
 When(~'^I remove the evaluation "([^"]*)" in criterion "([^"]*)" with origin "([^"]*)" and applicationDate "([^"]*)" from the student "([^"]*)" with login "([^"]*)"$') {
     String evaluationValue, String criterionDescription, String origin, String evaluationDate, String name, String login ->
-        tempEvaluationValue = evaluationValue
+        
+	
+		tempEvaluationValue = evaluationValue
         tempCriterionDescription = criterionDescription
         tempOrigin = origin
         tempName = name
@@ -134,7 +136,10 @@ When(~'^I remove the evaluation "([^"]*)" in criterion "([^"]*)" with origin "([
 
 Then(~'^the system correctly removes the evaluation$') { ->
     boolean bool = true
-
+	
+	to ShowStudentPage
+	at ShowStudentPage
+	
     Student s = Student.findByLogin(tempLogin)
     List<EvaluationsByCriterion> ebcList = s.criteriaAndEvaluations
     for (int i = 0; i < ebcList.size(); i++) {
