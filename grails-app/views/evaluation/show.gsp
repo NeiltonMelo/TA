@@ -31,6 +31,15 @@
 					
 				</li>
 				</g:if>
+				
+				<g:if test="${evaluationInstance?.classroom}">
+				<li class="fieldcontain">
+					<span id="origin-label" class="property-label"><g:message code="evaluation.classroom.label" default="Classroom" /></span>
+					
+						<span class="property-value" aria-labelledby="classroom-label"><g:fieldValue bean="${evaluationInstance}" field="classroom"/></span>
+					
+				</li>
+				</g:if>
 			
 				<g:if test="${evaluationInstance?.value}">
 				<li class="fieldcontain">

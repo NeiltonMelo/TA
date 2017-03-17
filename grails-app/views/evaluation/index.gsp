@@ -31,7 +31,8 @@
 						<th><g:message code="evaluation.criterion.label" default="Criterion" /></th>
 					
 						<g:sortableColumn property="applicationDate" title="${message(code: 'evaluation.applicationDate.label', default: 'Application Date')}" />
-					
+						
+						<g:sortableColumn property="classroom" title="${message(code: 'evaluation.classroom.label', default: 'Classroom')}" />
 					</tr>
 				</thead>
 				<tbody>
@@ -45,6 +46,8 @@
 						<td>${fieldValue(bean: evaluationInstance, field: "criterion.description")}</td>
 					
 						<td><g:formatDate date="${evaluationInstance.applicationDate}" /></td>
+						
+						<td>${ fieldValue(bean: evaluationInstance, field: "classroom")}</td>
 					
 					</tr>
 				</g:each>

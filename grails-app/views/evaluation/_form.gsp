@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: evaluationInstance, field: 'classroom', 'error')} required">
+    <label for="classroom">
+        <g:message code="evaluation.classroom.label" default="Classroom"/>
+        <span class="required-indicator">*</span>
+    </label>
+    <g:textField name="classroom" required="" value="${'Lab 11'}"/>
+</div>
+
+
 <div id="list-student" class="content scaffold-list" role="main">
 	<h1><g:message code="default.list.label" args="[entityName]" /></h1>
 	<g:if test="${flash.message}">
@@ -43,6 +52,8 @@
 			<g:sortableColumn property="login" title="${message(code: 'evaluation.value.label', default: 'Login')}" />
 
 			<g:sortableColumn property="value" title="${message(code: 'evaluation.value.label', default: 'Value')}" />
+			
+			
 
 		</tr>
 		</thead>

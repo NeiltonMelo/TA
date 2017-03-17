@@ -5,16 +5,20 @@ class Evaluation {
     String value;
     Date applicationDate;
     Criterion criterion;
-    static constraints = {
+	String classroom;
+    
+	static constraints = {
         origin inList :["Test","Mini-Test","Form","Final"], blank: false
         value inList :["MA","MPA","MANA","--"], blank :false
         criterion nullable : false
+		classroom nullable : false, blank : false, defaultValue : "Lab 11"
     }
 
-    public Evaluation(String origin, String value, Date applicationDate, String criterion){
+    public Evaluation(String origin, String value, Date applicationDate, String criterion, String classroom){
         this.origin = origin;
         this.value = value;
         this.applicationDate = applicationDate;
+		this.classroom = classroom;
         this.criterion = Criterion.findById(Long.parseLong(criterion));
     }
 
