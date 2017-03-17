@@ -64,8 +64,8 @@ Then(~'^I should not see the criterion "([^"]*)" listed in the student with logi
 
 Student studentToCheck
 
-Given(~'^the system has a student with name "([^"]*)" and login "([^"]*)"$') { String name, String login->
-    AddStudentsTestDataAndOperations.createStudent(name, login)
+Given(~'^the system has a student with name "([^"]*)" and login "([^"]*)" and password "([^"]*)"$') { String name, String login, String password->
+    AddStudentsTestDataAndOperations.createStudent(name, login, password)
     studentToCheck = Student.findByLogin(login)
     assert studentToCheck.login.equals(login)
     assert studentToCheck.name.equals(name)

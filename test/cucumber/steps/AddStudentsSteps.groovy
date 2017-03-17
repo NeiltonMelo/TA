@@ -16,12 +16,12 @@ this.metaClass.mixin(cucumber.api.groovy.EN)
 
 int countStudent
 
-Given(~'^the student "([^"]*)" with login "([^"]*)" is not registered in the system$') { String name, String login ->
+Given(~'^the student "([^"]*)" with login "([^"]*)" and password "([^"]*)" is not registered in the system$') { String name, String login, String password ->
     assert Student.findByLogin(login) == null
 }
 
-When(~'^I register "([^"]*)" with login "([^"]*)"$') { String name, String login ->
-    AddStudentsTestDataAndOperations.createStudent(name, login)
+When(~'^I register "([^"]*)" with login "([^"]*)" and password "([^"]*)"$' ) { String name, String login, String password ->
+    AddStudentsTestDataAndOperations.createStudent(name, login, password)
 }
 
 Then(~'^the student "([^"]*)" with login "([^"]*)" is saved in the system$') { String name, String login ->
@@ -42,19 +42,19 @@ Then(~'^I can see the name of "([^"]*)" and the login "([^"]*)" in the list of s
     assert page.confirmStudent(name, login)
 }
 
-Then(~/^I do not can see the name of "(.*?)" with login "(.*?)" in the list of students$/) { String name, String login ->
+Then(~/^I do not can see the name of "(.*?)" with login "(.*?)" and password "(.*?)" in the list of students$/) { String name, String login, String password ->
 	to StudentPage
 	assert AddStudentsTestDataAndOperations.alunoQtd(login) == 1
 	//assert page.qtdStudentTable(countStudent)
 }
 
-Given(~'^the student "([^"]*)" with login "([^"]*)" is registered in the system$') { String name, String login ->
-    AddStudentsTestDataAndOperations.createStudent(name, login)
+Given(~'^the student "([^"]*)" with login "([^"]*)" and password "([^"]*)" is registered in the system$') { String name, String login, String password ->
+    AddStudentsTestDataAndOperations.createStudent(name, login, password)
     countStudent = AddStudentsTestDataAndOperations.countStudent()
     assert Student.findByLogin(login) != null
 }
 
-Then(~'^the system does not register "([^"]*)" with login "([^"]*)"$') { String name, String login ->
+Then(~'^the system does not register "([^"]*)" with login "([^"]*)" and password "([^"]*)"$') { String name, String login, String password ->
     assert AddStudentsTestDataAndOperations.alunoQtd(login) == 1
 }
 

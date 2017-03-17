@@ -3,6 +3,7 @@ package ta
 class Student {
     String name;
     String login;
+	String password;
     double average;
     List criteriaAndEvaluations
     static hasMany = [criteriaAndEvaluations:EvaluationsByCriterion]
@@ -10,6 +11,7 @@ class Student {
     static constraints = {
         name blank : false
         login unique : true, blank:false;
+		password nullable: false, blank: false
     }
 
     static mapping = {
@@ -17,9 +19,10 @@ class Student {
         sort login: "asc"
     }
 
-    public Student(String name, String login){
+    public Student(String name, String login, String password = "senha"){
         this.name = name;
         this.login = login;
+		this.password = password;
         this.criteriaAndEvaluations = [];
     }
 
