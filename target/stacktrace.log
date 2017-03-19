@@ -17746,3 +17746,91 @@ java.lang.NullPointerException: Cannot invoke method click() on null object
 	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
 	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
 	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 19:57:49,307 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 19:57:49,335 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 19:57:49,350 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 19:57:49,351 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 19:58:06,601 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at pages.AddEvaluationPage$chooseValue$1.call(Unknown Source)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 19:58:06,601 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 19:58:06,602 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 19:58:06,602 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)

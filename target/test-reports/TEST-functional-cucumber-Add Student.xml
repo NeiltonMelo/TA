@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-S5990V7" name="Add Student" tests="10" time="33.477" timestamp="2017-03-04T00:59:56">
+<testsuite errors="0" failures="0" hostname="DESKTOP-S5990V7" name="Add Student" tests="10" time="27.843" timestamp="2017-03-19T22:57:10">
   <properties />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a new student" time="0.083" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Message from the new student registration" time="6.739" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student with a login that already exists" time="0.079" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a login twice" time="0.914" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice" time="0.065" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a student twice" time="6.442" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of student" time="0.089" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="See the new group of students in the list" time="5.521" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student" time="0.084" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student in list" time="13.412" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a new student" time="0.089" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Message from the new student registration" time="7.585" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student with a login that already exists" time="0.095" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a login twice" time="0.615" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice" time="0.067" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a student twice" time="5.887" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of student" time="0.094" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="See the new group of students in the list" time="5.487" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student" time="0.095" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student in list" time="7.769" />
   <system-out><![CDATA[Feature: Add Student
   As a professor
   I want to register students in the system
