@@ -1,7 +1,6 @@
 <%@ page import="ta.Evaluation" %>
 
 
-
 <div class="fieldcontain ${hasErrors(bean: evaluationInstance, field: 'origin', 'error')} required">
 	<label for="origin">
 		<g:message code="evaluation.origin.label" default="Origin" />
