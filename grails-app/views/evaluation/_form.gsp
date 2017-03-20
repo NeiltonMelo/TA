@@ -1,11 +1,10 @@
 <%@ page import="ta.Evaluation"%>
 
 
-
-<div
-	class="fieldcontain ${hasErrors(bean: evaluationInstance, field: 'origin', 'error')} required">
-	<label for="origin"> <g:message code="evaluation.origin.label"
-			default="Origin" /> <span class="required-indicator">*</span>
+<div class="fieldcontain ${hasErrors(bean: evaluationInstance, field: 'origin', 'error')} required">
+	<label for="origin">
+		<g:message code="evaluation.origin.label" default="Origin" />
+		<span class="required-indicator">*</span>
 	</label>
 	<g:select name="origin"
 		from="${evaluationInstance.constraints.origin.inList}" required=""
@@ -38,6 +37,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: evaluationInstance, field: 'classroom', 'error')} required">
+    <label for="classroom">
+        <g:message code="evaluation.classroom.label" default="Classroom"/>
+        <span class="required-indicator">*</span>
+    </label>
+    <g:textField name="classroom" required="" value="${'Lab 11'}"/>
+</div>
+
+
 <div id="list-student" class="content scaffold-list" role="main">
 	<h1>
 		<g:message code="default.list.label" args="[entityName]" />
@@ -57,8 +65,14 @@
 				<g:sortableColumn property="login"
 					title="${message(code: 'evaluation.value.label', default: 'Login')}" />
 
+<<<<<<< HEAD
 				<g:sortableColumn property="value"
 					title="${message(code: 'evaluation.value.label', default: 'Value')}" />
+=======
+			<g:sortableColumn property="value" title="${message(code: 'evaluation.value.label', default: 'Value')}" />
+			
+			
+>>>>>>> fagner/master
 
 			</tr>
 		</thead>

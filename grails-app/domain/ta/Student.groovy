@@ -95,4 +95,5 @@ class Student {
             this.addToCriteriaAndEvaluations(evCriterion);
         }
     }
+	
 }

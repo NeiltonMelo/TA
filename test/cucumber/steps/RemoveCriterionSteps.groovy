@@ -22,11 +22,11 @@ this.metaClass.mixin(cucumber.api.groovy.EN)
 
 // GUI Scenario
 
-Given(~'^a student with name "([^"]*)" and login "([^"]*)" is already on the system$') {
-    String name, String login ->
+Given(~'^a student with name "([^"]*)" and login "([^"]*)" and password "([^"]*)" is already on the system$') {
+    String name, String login, String password ->
         to AddStudentsPage
         at AddStudentsPage
-        page.fillStudentDetails(name, login)
+        page.fillStudentDetails(name, login, password)
         page.selectAddStudent()
 }
 
