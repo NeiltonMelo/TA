@@ -65,14 +65,8 @@
 				<g:sortableColumn property="login"
 					title="${message(code: 'evaluation.value.label', default: 'Login')}" />
 
-<<<<<<< HEAD
-				<g:sortableColumn property="value"
-					title="${message(code: 'evaluation.value.label', default: 'Value')}" />
-=======
 			<g:sortableColumn property="value" title="${message(code: 'evaluation.value.label', default: 'Value')}" />
-			
-			
->>>>>>> fagner/master
+
 
 			</tr>
 		</thead>
