@@ -79,16 +79,20 @@ class StudentController {
                     flush: true,
                     failOnError: true
             )
-            for (Report report : Report.list()) {
-                if (report.tipo.equalsIgnoreCase("Porcentagem")) {
-                    checkConditionPercentage(Student.list().get(i).login, report)
-                } else {
-                    checkConditionAverage(Student.list().get(i), report)
-                }
-            }
+            checkConditionListReport(i)
         }
         return true
     }
+
+	def checkConditionListReport(int i) {
+		for (Report report : Report.list()) {
+			if (report.tipo.equalsIgnoreCase("Porcentagem")) {
+				checkConditionPercentage(Student.list().get(i).login, report)
+			} else {
+				checkConditionAverage(Student.list().get(i), report)
+			}
+		}
+	}
 
     public void addEvaluationsToStudentTests(String studentLogin, LinkedList<Evaluation> evaluationList){
         for (int i = 0; i < Student.list().size(); i++) {
