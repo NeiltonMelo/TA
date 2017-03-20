@@ -54,6 +54,23 @@ Feature: Add Student
     Given the student "João Adherval" with login "ja" is not registered in the system                 # AddStudentsSteps.groovy:19
     And the student "Milena Cabral" with login "mscc" is not registered in the system                 # AddStudentsSteps.groovy:19
     When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)" # AddStudentsSteps.groovy:66
+      java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+      	at java_lang_CharSequence$charAt$5.call(Unknown Source)
+      	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+      	at ta.StudentController$_espacoBranco_closure31.doCall(StudentController.groovy)
+      	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+      	at ta.StudentController.espacoBranco(StudentController.groovy)
+      	at ta.StudentController$espacoBranco$1.callCurrent(Unknown Source)
+      	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+      	at ta.StudentController$_saveGroup_closure32.doCall(StudentController.groovy)
+      	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+      	at ta.StudentController.saveGroup(StudentController.groovy)
+      	at ta.StudentController$saveGroup$0.call(Unknown Source)
+      	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+      	at steps.AddStudentsTestDataAndOperations$createGroup$3.call(Unknown Source)
+      	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+      	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+
     Then the student "João Adherval" with login "jacb" is saved in the system                         # AddStudentsSteps.groovy:27
     And the student "Milena Cabral" with login "mscc" is saved in the system                          # AddStudentsSteps.groovy:27
 

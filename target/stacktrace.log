@@ -17834,3 +17834,372 @@ java.lang.NullPointerException: Cannot invoke method click() on null object
 	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
 	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
 	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:39:59,855 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:39:59,869 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:39:59,878 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:39:59,878 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:40:16,572 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~ /Show Student/
+|     |
+|     false
+Student List
+
+	at pages.StudentPages.ShowStudentPage$__clinit__closure1.doCall(ShowStudentPage.groovy:13)
+	at pages.StudentPages.ShowStudentPage$__clinit__closure1.doCall(ShowStudentPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.RemoveCriterionSteps$_run_closure4.doCall(RemoveCriterionSteps.groovy:59)
+	at ✽.Then I should not see the criterion "TEORICA" listed in the student with login "zc"(RemoveCriterion.feature:13)
+2017-03-19 22:40:16,573 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~ /Show Student/
+|     |
+|     false
+Student List
+
+	at pages.StudentPages.ShowStudentPage$__clinit__closure1.doCall(ShowStudentPage.groovy:13)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.RemoveCriterionSteps$_run_closure4.doCall(RemoveCriterionSteps.groovy:59)
+	at ✽.Then I should not see the criterion "TEORICA" listed in the student with login "zc"(RemoveCriterion.feature:13)
+2017-03-19 22:40:16,574 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~ /Show Student/
+|     |
+|     false
+Student List
+
+	at pages.StudentPages.ShowStudentPage$__clinit__closure1.doCall(ShowStudentPage.groovy:13)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.RemoveCriterionSteps$_run_closure4.doCall(RemoveCriterionSteps.groovy:59)
+	at ✽.Then I should not see the criterion "TEORICA" listed in the student with login "zc"(RemoveCriterion.feature:13)
+2017-03-19 22:40:16,574 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~ /Show Student/
+|     |
+|     false
+Student List
+
+	at pages.StudentPages.ShowStudentPage$__clinit__closure1.doCall(ShowStudentPage.groovy:13)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.RemoveCriterionSteps$_run_closure4.doCall(RemoveCriterionSteps.groovy:59)
+	at ✽.Then I should not see the criterion "TEORICA" listed in the student with login "zc"(RemoveCriterion.feature:13)
+2017-03-19 22:40:22,925 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at pages.AddEvaluationPage$chooseValue$1.call(Unknown Source)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:40:22,926 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:40:22,926 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:40:22,926 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:47:20,313 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:47:20,336 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:47:20,348 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:47:20,348 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 22:47:40,270 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at pages.AddEvaluationPage$chooseValue$1.call(Unknown Source)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:47:40,270 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:47:40,271 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 22:47:40,271 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 23:17:37,640 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+	at java_lang_CharSequence$charAt$5.call(Unknown Source)
+	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+	at ta.StudentController$_espacoBranco_closure31.doCall(StudentController.groovy)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at ta.StudentController.espacoBranco(StudentController.groovy)
+	at ta.StudentController$espacoBranco$1.callCurrent(Unknown Source)
+	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+	at ta.StudentController$_saveGroup_closure32.doCall(StudentController.groovy)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at ta.StudentController.saveGroup(StudentController.groovy)
+	at ta.StudentController$saveGroup$0.call(Unknown Source)
+	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+	at steps.AddStudentsTestDataAndOperations$createGroup$3.call(Unknown Source)
+	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+2017-03-19 23:17:37,662 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+2017-03-19 23:17:37,700 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+2017-03-19 23:17:37,700 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+2017-03-19 23:18:11,517 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Page$verifyAt$4.call(Unknown Source)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 23:18:11,519 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 23:18:11,521 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 23:18:11,521 [main] ERROR StackTrace  - Full Stack Trace:
+Assertion failed: 
+
+title ==~/Report List/
+|     |
+|     false
+Show Report
+
+	at pages.ReportsPages.ShowReportsPage$__clinit__closure1.doCall(ShowReportsPage.groovy:11)
+	at geb.Page.verifyThisPageAtOnly(Page.groovy:228)
+	at geb.Page.verifyAt(Page.groovy:182)
+	at geb.Browser.doAt(Browser.groovy:454)
+	at geb.Browser.at(Browser.groovy:336)
+	at geb.binding.BindingUpdater$InvocationForwarding.doCall(BindingUpdater.groovy:73)
+	at steps.StepDefReport$_run_closure8.doCall(StepDefReport.groovy:74)
+	at ✽.Then I should see the details related to the "70% of evaluations are over the class average" report(Notificacao.feature:33)
+2017-03-19 23:18:32,014 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at pages.AddEvaluationPage$chooseValue$1.call(Unknown Source)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 23:18:32,014 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 23:18:32,015 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)
+2017-03-19 23:18:32,015 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot invoke method click() on null object
+	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
+	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
+	at ✽.And this student has "MA" evaluation in criterion "SI"(RemoveEvaluation.feature:11)

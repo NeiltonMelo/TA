@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="DESKTOP-S5990V7" name="Remove Evaluation" tests="2" time="4.949" timestamp="2017-03-19T22:58:01">
+<testsuite errors="1" failures="0" hostname="DESKTOP-S5990V7" name="Remove Evaluation" tests="2" time="5.66" timestamp="2017-03-20T02:18:26">
   <properties />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove evaluations in different criterion from a student" time="4.713">
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove evaluations in different criterion from a student" time="5.367">
     <error message="Cannot invoke method click() on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke method click() on null object
 	at pages.AddEvaluationPage.chooseValue(AddEvaluationPage.groovy:28)
 	at steps.RemoveEvaluationSteps.addEvaluationToCriterion(RemoveEvaluationSteps.groovy:61)
 	at ✽.And this student has &quot;MA&quot; evaluation in criterion &quot;SI&quot;(RemoveEvaluation.feature:11)
 </error>
   </testcase>
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove an Evaluation from a Student" time="0.183" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Remove an Evaluation from a Student" time="0.235" />
   <system-out><![CDATA[#Arthur Lapprand
 Feature: Remove Evaluation
   As the teacher

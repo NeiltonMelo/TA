@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-S5990V7" name="Add Student" tests="10" time="27.843" timestamp="2017-03-19T22:57:10">
+<testsuite errors="1" failures="0" hostname="DESKTOP-S5990V7" name="Add Student" tests="10" time="34.037" timestamp="2017-03-20T02:17:22">
   <properties />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a new student" time="0.089" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Message from the new student registration" time="7.585" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student with a login that already exists" time="0.095" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a login twice" time="0.615" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice" time="0.067" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a student twice" time="5.887" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of student" time="0.094" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="See the new group of students in the list" time="5.487" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student" time="0.095" />
-  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student in list" time="7.769" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a new student" time="0.098" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Message from the new student registration" time="7.605" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student with a login that already exists" time="0.094" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a login twice" time="0.597" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice" time="0.074" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Error message when registering a student twice" time="6.37" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a group of student" time="0.192">
+    <error message="String index out of range: 14" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+	at ✽.When I send a text with &quot;João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)&quot;(AddStudents.feature:48)
+</error>
+  </testcase>
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="See the new group of students in the list" time="6.226" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student" time="0.081" />
+  <testcase classname="grails.plugin.cucumber.CucumberTest" name="Register a student twice in a group of student in list" time="12.632" />
   <system-out><![CDATA[Feature: Add Student
   As a professor
   I want to register students in the system
@@ -67,6 +75,23 @@
     Given the student "João Adherval" with login "ja" is not registered in the system                 # AddStudentsSteps.groovy:19
     And the student "Milena Cabral" with login "mscc" is not registered in the system                 # AddStudentsSteps.groovy:19
     When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)" # AddStudentsSteps.groovy:66
+      java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+      	at java_lang_CharSequence$charAt$5.call(Unknown Source)
+      	at ta.StudentController.$tt__espacoBranco(StudentController.groovy:332)
+      	at ta.StudentController$_espacoBranco_closure31.doCall(StudentController.groovy)
+      	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+      	at ta.StudentController.espacoBranco(StudentController.groovy)
+      	at ta.StudentController$espacoBranco$1.callCurrent(Unknown Source)
+      	at ta.StudentController.$tt__saveGroup(StudentController.groovy:350)
+      	at ta.StudentController$_saveGroup_closure32.doCall(StudentController.groovy)
+      	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+      	at ta.StudentController.saveGroup(StudentController.groovy)
+      	at ta.StudentController$saveGroup$0.call(Unknown Source)
+      	at steps.AddStudentsTestDataAndOperations.createGroup(AddStudentsTestDataAndOperations.groovy:41)
+      	at steps.AddStudentsTestDataAndOperations$createGroup$3.call(Unknown Source)
+      	at steps.AddStudentsSteps$_run_closure10.doCall(AddStudentsSteps.groovy:67)
+      	at ✽.When I send a text with "João Adherval (jacb :: joaoadherval); Milena Cabral (mscc :: Milechwan)"(AddStudents.feature:48)
+
     Then the student "João Adherval" with login "jacb" is saved in the system                         # AddStudentsSteps.groovy:27
     And the student "Milena Cabral" with login "mscc" is saved in the system                          # AddStudentsSteps.groovy:27
 
