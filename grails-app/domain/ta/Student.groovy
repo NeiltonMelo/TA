@@ -97,8 +97,6 @@ class Student {
         }
     }
 	
-<<<<<<< HEAD
-=======
 	@Override
 	public boolean equals(Object obj){
 		
@@ -113,6 +111,4 @@ class Student {
 	public int hashCode(){
 		return this.name.charAt(0);
 	}
-
->>>>>>> edilberto/master
 }
