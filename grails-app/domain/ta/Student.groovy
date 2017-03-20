@@ -97,4 +97,22 @@ class Student {
         }
     }
 	
+<<<<<<< HEAD
+=======
+	@Override
+	public boolean equals(Object obj){
+		
+		if(obj instanceof Student && this.getName() == student.getName() && this.getLogin() == student.getLogin()){
+			return true;	
+		}else{
+			return false;
+		}
+	}
+	
+	@Override
+	public int hashCode(){
+		return this.name.charAt(0);
+	}
+
+>>>>>>> edilberto/master
 }
