@@ -15,7 +15,7 @@ Scenario: Remove evaluations in different criterion from a student
 
 #Controller Scenario
 Scenario: Remove an Evaluation from a Student
-  Given the system has a student registered with name "Fulano Detal" and login "fd"
+  Given the system has a student registered with name "Fulano Detal" and login "fd" and password "lala"
   And this student has a "MA" evaluation in criterion "ESS" with origin "Test" and applicationDate "21/12/1992"
   When I remove the evaluation "MA" in criterion "ESS" with origin "Test" and applicationDate "21/12/1992" from the student "Fulano Detal" with login "fd"
   Then the system correctly removes the evaluation
