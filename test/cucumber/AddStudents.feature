@@ -1,4 +1,4 @@
-﻿Feature: Add Student
+﻿﻿Feature: Add Student
   As a professor
   I want to register students in the system
   So I can evaluate the students with respect to various criteria
@@ -27,3 +27,4 @@
 	And I am in the "add student" page
     When I add the " " with login "Fa" and password "bibi"
     Then I should see a message related to the student registration failure
+

@@ -34,4 +34,8 @@ class Evaluation {
             return false
         }
     }
+	public String toString() {
+		return "Origin "+origin + "Value "+value + "Data "+applicationDate + "Criterion "+criterion
+				 
+		}
 }
