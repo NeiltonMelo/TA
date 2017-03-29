@@ -9,9 +9,15 @@ import ta.CriterionController
 
 class CriterionTestDataAndOperations {
 
+	
+	private static CriterionController createCriterionController(String description) {
+		def controller = new CriterionController()
+		controller.params << [description: description]
+		return controller
+	}
+	
     public static void createCriterion(String description) {
-        def controller = new CriterionController()
-        controller.params << [description: description]
+        def controller = createCriterionController(description)
         controller.createAndSaveCriterion()
         controller.response.reset()
     }
@@ -28,14 +34,12 @@ class CriterionTestDataAndOperations {
     }
 
     public static boolean compatibleInCriteria(String desc) {
-        def controller = new CriterionController()
-        controller.params << [description: desc]
+        def controller = createCriterionController(desc)
         return controller.compatibleInCriteria()
     }
 
     public static Criterion getCriterion(String desc) {
-        def controller = new CriterionController()
-        controller.params << [description: desc]
+        def controller = createCriterionController(desc)
         return controller.retrieveCriterion()
     }
 
@@ -45,8 +49,7 @@ class CriterionTestDataAndOperations {
     }
 
     public static void createGroupCriteria(String descriptionGroup){
-        def controller = new CriterionController()
-        controller.params << [description: descriptionGroup]
+        def controller = createCriterionController(descriptionGroup)
         controller.saveGroup()
         controller.response.reset()
     }
